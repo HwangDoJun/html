@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" charset="UTF-8">
+    <title>프로필 아무렇게 만들어보기</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        body{
+            background-color:blueviolet;
+            padding-top:8rem;
+            display:flex;
+            justify-content:center;
+        }
+        .profile{
+            width:8rem;
+            height:8rem;
+            background-image:url("https://img.freepik.com/premium-photo/fluffy-little-3d-monster-cartoon-art-cute-innocent-generative-ai_742252-17028.jpg");
+            background-size:130px;
+            border-radius:30px;
+            box-shadow:0 0.5rex 1rex rgba(0, 0, 0, 0.3);
+            transform:translateY(50%);
+        }
+        .banner{
+            background-image:url("https://media.istockphoto.com/id/1238324920/vector/business-economics-doodle-seamless-pattern-and-line-icons.jpg?s=170667a&w=0&k=20&c=gERGqwzY5R_BQfevGjtizjuARsc5XI-h7mw-fonuWsE=");
+            display:flex;
+            justify-content:center;
+        }
+        .card{
+            background-color: #fff;
+            max-width:360px;
+            overflow:hidden;
+            border-radius:2rem;
+            box-shadow:0 2px 2px rgba(0, 0, 0, 0.5);    
+        }
+        .name{
+            text-align:center;
+            padding-top:60px;
+        }
+        .follow-btn{
+            padding:0 2rem;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+        .follow-btn button{
+            font-size:medium;
+            font-weight:bold;
+            background-color:gold;
+            border:none;
+            padding:1rem;
+            outline:none;
+            border-radius:20px;
+        
+        }
+        .desc{
+            padding:1.5rem;
+            font-size:14px
+        }
+        .profile:hover{
+            transform:translateY(50%) scale(1.2);
+        }
+        .follow-btn button:hover{
+            background-color:deepskyblue;
+            transform:scale(1.1);
+        }
+    </style>
+</head>
+<body>
+   <div class="card">
+       <div class="banner">
+           <div class="profile"></div>
+       </div>
+       <h2 class="name">HwangDoJun</h2>
+       <div class="follow-btn">
+           <button><a href="/html/note03/n03-3-1.html">Follow</a></button>
+       </div>
+       <div class="desc">"아무것도 안하고 싶다. 지금도 아무것도 안하고 있지만 더욱 격렬하게 아무것도 안하고 싶다."</div>
+   </div>
+    
+</body>
+</html>

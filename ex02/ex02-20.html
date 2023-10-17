@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 영화카드 만들기</title>
+    <style>
+        .contain{
+            margin: auto;
+            width:500px;
+            height:800px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px 0;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .card{
+            margin: auto;
+            border: 1px solid rgba( 0, 0, 0, 0.3 );
+            width:210px;
+            height:200px;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px 0;
+        }
+        .imgs{
+            background-image:url("https://media.them.us/photos/5bc8acbf91503e00112514c2/16:9/w_1920,c_limit/Coco_dominates_Chinese_box_office_.jpg");
+            background-color:beige;
+            background-size:contain;
+            height:65%;
+            
+        }
+        img{
+            width:100%;
+            height:65%;
+            object-fit:fill;
+        }
+        .card div{
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+<!--   div.contain>(div.card>div.imgs{img1}+div{title$})*4-->
+   <div class="contain">
+       <div class="card">
+           <div class="imgs"></div>
+           <div>Coco</div>
+       </div>
+       <div class="card">
+           <div class="imgs"></div>
+           <div>감동적인 영화 코코</div>
+       </div>
+       <div class="card">
+           <img src="/html/img/shrek-2-cinema-quad-movie-poster.jfif" alt="img3">
+           <div>슈렉</div>
+       </div>
+       <div class="card">
+           <img src="/html/img/Monsters-University-Poster-690x375.jfif" alt="img4">
+           <div>몬스터 대학교</div>
+       </div>
+        <div class="card">
+           <img src="https://d23.com/app/uploads/2019/05/1180w-600h_052919_up-anniversary-facts-780x440.jpg" alt="img5">
+           <div>업</div>
+       </div>
+       <div class="card">
+           <img src="https://www.pluggedin.com/wp-content/uploads/2019/12/How_to_Train_Your_Dragon_3__Large-1024x587.jpg" alt="img6">
+           <div>드래곤 길들이기</div>
+       </div>
+   </div>
+    
+</body>
+</html>

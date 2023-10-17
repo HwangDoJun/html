@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float을 이용한 레이아웃 제작 연습</title>
+    <style>
+        html,body{
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+        }
+        global {
+            display:block;
+            width:100%;
+            height:15%;
+            background-color: #f19292;
+            border:5px solid red;
+        }
+        main{
+            height:85%;
+        }
+        left {
+            display:block;
+            background-color: #b9e74f;
+            float: left;
+            height:100%;
+            width:20%;
+            border:5px solid violet;
+        }
+        content{
+            float:left;
+            height:100%;
+            width:calc(80% - 10px);
+        }
+        article {
+            background-color: #48c7cb;
+            width:100%;
+            height:calc(80% - 5px);
+            border:5px solid blue;
+        }
+
+        comment {
+            display:block;
+            background-color: #a07ced;
+            width:100%;
+            height:calc(20% - 5px);
+            border:5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  global+main>left+content>article+comment-->
+    <global>global menu</global>
+    <main>
+        <left>left menu</left>
+        <content>
+            <article>article</article>
+            <comment>comment</comment>
+        </content>
+    </main>
+
+
+</body></html>

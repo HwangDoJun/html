@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg-1a:#630c0c;
+            --bg-1b:#3d809d;
+            --bg-1c:#cabf4e;
+            --bg-1d:#70c651;
+            --bg-1e:#3abab5;
+                
+            --bg-2a:#630c0c;
+            --bg-2b:#3d809d;
+            --bg-2c:#cabf4e;
+            --bg-2d:#70c651;
+            --bg-2e:#3abab5;
+            
+            --bg-3a:#630c0c;
+            --bg-3b:#3d809d;
+            --bg-3c:#cabf4e;
+            --bg-3d:#70c651;
+            --bg-3e:#3abab5;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:column;
+            width:500%;
+            border:1px solid #000;
+            height:100%;
+            padding:10px;
+        }
+        .c1,.c2,.c3{
+            height:100%;
+            display:flex;
+            justify-content:space-between;
+        }
+        div div{
+            margin:20px;
+            width:100%;
+            background-color:green;
+        }
+        .c1{
+            background-color:var(--bg-1d);
+        }
+        .c2{
+            background-color:var(--bg-2d);
+        }
+        .c3{
+            background-color:var(--bg-3d);
+        }
+        
+        
+        .c1 divLfirst-child{
+            background-color:var(--bg-1a);
+        }
+        .c1.div:nth-child(2n){
+            background-color:var(--bg-1b);
+        }
+        .c1.div:nth-child(3n){
+            background-color:var(--bg-1c);
+        }
+        .c1.div:nth-last-child{
+            background-color:var(--bg-1d);
+        }
+        
+        
+        .c2 divLfirst-child{
+            background-color:var(--bg-2a);
+        }
+        .c2.div:nth-child(2n){
+            background-color:var(--bg-2b);
+        }
+        .c2.div:nth-child(3n){
+            background-color:var(--bg-2c);
+        }
+        .c2.div:nth-last-child{
+            background-color:var(--bg-2d);
+        }
+        
+        
+        .c3 divLfirst-child{
+            background-color:var(--bg-3a);
+        }
+        .c3.div:nth-child(2n){
+            background-color:var(--bg-3b);
+        }
+        .c3.div:nth-child(3n){
+            background-color:var(--bg-3c);
+        }
+        .c4.div:nth-last-child{
+            background-color:var(--bg-3d);
+        }
+    </style>
+</head>
+<body>
+<!--   (div.c$>div*3)*3-->
+  
+   <div class="c1">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+   </div>
+   <div class="c2">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+   </div>
+   <div class="c3">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+   </div>
+    
+</body>
+</html>
